@@ -66,8 +66,12 @@ class MainActivity : AppCompatActivity() {
             setGeolocationEnabled(true)
             allowFileAccess = true
             allowContentAccess = true
+            allowFileAccessFromFileURLs = true
+            allowUniversalAccessFromFileURLs = true
             cacheMode = WebSettings.LOAD_DEFAULT
             mixedContentMode = WebSettings.MIXED_CONTENT_ALWAYS_ALLOW
+            useWideViewPort = true
+            loadWithOverviewMode = true
         }
 
         webView.webChromeClient = object : WebChromeClient() {
@@ -79,7 +83,16 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        webView.webViewClient = WebViewClient()
+        webView.webViewClient = object : WebViewClient() {
+            override fun onReceivedError(
+                view: WebView?,
+                errorCode: Int,
+                description: String?,
+                failingUrl: String?
+            ) {
+                super.onReceivedError(view, errorCode, description, failingUrl)
+            }
+        }
 
         // Loads the controller UI directly from bundled local assets (100% offline & fast)
         webView.loadUrl("file:///android_asset/index.html")
