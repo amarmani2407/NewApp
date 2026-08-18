@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .bg-bento-card {
+    background-color: #16181d;
+    border-color: #2a2d35;
+  }
+  
+  .bg-bento-subcard {
+    background-color: #1f2229;
+    border-color: #2a2d35;
+  }
+
+  .bg-bento-dark {
+    background-color: #0f1115;
+    border-color: #2a2d35;
+  }
+
+  .bento-dot-grid {
+    background-image: radial-gradient(rgba(59, 130, 246, 0.15) 1px, transparent 1px);
+    background-size: 28px 28px;
+  }
+}
+
+/* Custom crisp dark scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0a0c;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a2d35;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3b82f6;
+}
+

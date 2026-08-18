@@ -1,0 +1,7 @@
+{
+  "name": "Automatic Delivery Robot Controller",
+  "description": "Navigation brain and Bluetooth controller for autonomous delivery robots with Google Maps route execution, GPS waypoint tracking, manual D-pad override, and Arduino UNO integration.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

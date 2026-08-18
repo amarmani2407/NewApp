@@ -1,0 +1,18 @@
+{
+  "name": "Automatic Delivery Robot Controller",
+  "short_name": "Delivery Robot",
+  "description": "Autonomous Navigation Brain & Bluetooth Controller for Arduino Delivery Robot",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0A0A0C",
+  "theme_color": "#16181D",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%2316181D'/><circle cx='50' cy='50' r='30' fill='%233B82F6'/><polygon points='40,35 68,50 40,65' fill='%23FFFFFF'/></svg>",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
